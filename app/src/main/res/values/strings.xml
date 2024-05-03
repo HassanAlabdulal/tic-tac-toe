@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TIC TAC TOE</string>
+    <string name="player_info">Player 1</string>
+    <string name="game_status">Your turn</string>
+    <string name="replay_button">Replay</string>
+    <string name="title_activity_send_otpactivity">SendOTPActivity</string>
+
+</resources>
