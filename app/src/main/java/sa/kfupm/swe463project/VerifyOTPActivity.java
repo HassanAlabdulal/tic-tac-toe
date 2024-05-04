@@ -19,7 +19,6 @@ public class VerifyOTPActivity extends AppCompatActivity {
         TextView textMobile = findViewById(R.id.textMobile);
         textMobile.setText(String.format("+966-%s", getIntent().getStringExtra("mobile")));
 
-
         inputCode1 = findViewById(R.id.inputCode1);
         inputCode2 = findViewById(R.id.inputCode2);
         inputCode3 = findViewById(R.id.inputCode3);
@@ -31,93 +30,35 @@ public class VerifyOTPActivity extends AppCompatActivity {
     }
 
     private void setupOTPInputs() {
-        inputCode1.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (s.toString().trim().isEmpty()) {
-                    inputCode2.requestFocus();
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-            }
-        });
-
-        inputCode2.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (s.toString().trim().isEmpty()) {
-                    inputCode3.requestFocus();
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-            }
-        });
-
-        inputCode3.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (s.toString().trim().isEmpty()) {
-                    inputCode4.requestFocus();
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-            }
-        });
-
-        inputCode4.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (s.toString().trim().isEmpty()) {
-                    inputCode5.requestFocus();
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-            }
-        });
-
-        inputCode5.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (s.toString().trim().isEmpty()) {
-                    inputCode6.requestFocus();
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-            }
-        });
-
+        inputCode1.addTextChangedListener(new GenericTextWatcher(inputCode1, inputCode2));
+        inputCode2.addTextChangedListener(new GenericTextWatcher(inputCode2, inputCode3));
+        inputCode3.addTextChangedListener(new GenericTextWatcher(inputCode3, inputCode4));
+        inputCode4.addTextChangedListener(new GenericTextWatcher(inputCode4, inputCode5));
+        inputCode5.addTextChangedListener(new GenericTextWatcher(inputCode5, inputCode6));
+        inputCode6.addTextChangedListener(new GenericTextWatcher(inputCode6, null)); // No next EditText after the last one
     }
 
+    class GenericTextWatcher implements TextWatcher {
+        private EditText currentView;
+        private EditText nextView;
 
+        public GenericTextWatcher(EditText currentView, EditText nextView) {
+            this.currentView = currentView;
+            this.nextView = nextView;
+        }
 
+        @Override
+        public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
+
+        @Override
+        public void onTextChanged(CharSequence charSequence, int start, int before, int count) {
+            String text = charSequence.toString();
+            if (text.length() == 1 && nextView != null) {
+                nextView.requestFocus();
+            }
+        }
+
+        @Override
+        public void afterTextChanged(Editable editable) {}
+    }
 }
