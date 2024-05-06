@@ -3,9 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:overScrollMode="never"
     android:scrollbars="none"
     tools:context=".SendOTPActivity">
+
 
     <LinearLayout android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,9 +23,9 @@
         <TextView android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="@string/otp_verification"
+            android:text="@string/sign_in"
             android:textColor="@color/colorTextPrimary"
-            android:textSize="20sp"
+            android:textSize="30sp"
             android:textStyle="bold" />
 
         <TextView android:layout_width="match_parent"
@@ -91,11 +93,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <Button android:id="@+id/buttonGetOTP"
+            <Button
+                android:id="@+id/buttonGetOTP"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="30dp"
-                android:background="@drawable/background_button"
+                android:background="@drawable/replay_button_background"
                 android:text="@string/get_otp"
                 android:textColor="@color/colorWhite"
                 android:textSize="16sp"
