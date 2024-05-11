@@ -15,6 +15,9 @@
     <string name="resend_otp">RESEND OTP</string>
     <string name="verify">Verify</string>
     <string name="sign_in">Sign In</string>
+    <string name="play_offline">Play Offline</string>
+    <string name="welcome_ntic_tac_toe">Welcome\nTIC TAC TOE</string>
+    <string name="play_online">Play Online</string>
 
 
 </resources>
