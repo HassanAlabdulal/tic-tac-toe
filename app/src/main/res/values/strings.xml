@@ -18,6 +18,11 @@
     <string name="play_offline">Play Offline</string>
     <string name="welcome_ntic_tac_toe">Welcome\nTIC TAC TOE</string>
     <string name="play_online">Play Online</string>
+    <string name="enter_a_game_id">Enter a game ID</string>
+    <string name="join_online_game">Join Online Game</string>
+    <string name="create_online_game">Create Online Game</string>
+    <string name="game_not_started">Game not started</string>
+    <string name="start_game">Start game</string>
 
 
 </resources>
