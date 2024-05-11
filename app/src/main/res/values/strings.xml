@@ -29,6 +29,12 @@
     <string name="score">Score :</string>
     <string name="x_0">X - 0</string>
     <string name="y_0">Y - 0</string>
+    <string name="join_a_game">Join a Game</string>
+    <string name="enter_code_below_to_join_a_game">Enter Code Below To Join A Game</string>
+    <string name="_0000">0000</string>
+    <string name="join">Join</string>
+    <string name="choose_an_option">Choose An Option</string>
+    <string name="create_a_game">Create a Game</string>
 
 
 </resources>

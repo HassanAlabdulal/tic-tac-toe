@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainPageActivity">
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textViewWelcome"
@@ -30,7 +30,7 @@
         app:layout_constraintRight_toRightOf="parent"/>
 
     <Button
-        android:id="@+id/buttonOffline"
+        android:id="@+id/offlinebtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
@@ -47,7 +47,7 @@
         app:layout_constraintTop_toBottomOf="@id/imageView" />
 
     <Button
-        android:id="@+id/buttonOnline"
+        android:id="@+id/onlinebtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -58,7 +58,7 @@
         android:textColor="@color/colorWhite"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/buttonOffline"
+        app:layout_constraintTop_toBottomOf="@id/offlinebtn"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
