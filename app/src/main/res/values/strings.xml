@@ -23,6 +23,12 @@
     <string name="create_online_game">Create Online Game</string>
     <string name="game_not_started">Game not started</string>
     <string name="start_game">Start game</string>
+    <string name="you_are">You are: -</string>
+    <string name="turn">Turn :</string>
+    <string name="x_won">X WON!</string>
+    <string name="score">Score :</string>
+    <string name="x_0">X - 0</string>
+    <string name="y_0">Y - 0</string>
 
 
 </resources>
