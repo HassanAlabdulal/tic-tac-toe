@@ -156,7 +156,7 @@
                     android:gravity="center"
                     android:textSize="50sp"
                     android:backgroundTint="@color/white"
-                    android:textColor="@color/teal_700"/>
+                    android:textColor="@color/colorPrimary"/>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -179,7 +179,7 @@
                     android:gravity="center"
                     android:textSize="50sp"
                     android:backgroundTint="@color/white"
-                    android:textColor="@color/teal_700"/>
+                    android:textColor="@color/colorPrimary"/>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -202,7 +202,7 @@
                     android:gravity="center"
                     android:textSize="50sp"
                     android:backgroundTint="@color/white"
-                    android:textColor="@color/teal_700"/>
+                    android:textColor="@color/colorPrimary"/>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
 
@@ -232,7 +232,7 @@
                     android:gravity="center"
                     android:textSize="50sp"
                     android:backgroundTint="@color/white"
-                    android:textColor="@color/teal_700"/>
+                    android:textColor="@color/colorPrimary"/>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -255,7 +255,7 @@
                     android:gravity="center"
                     android:textSize="50sp"
                     android:backgroundTint="@color/white"
-                    android:textColor="@color/teal_700"/>
+                    android:textColor="@color/colorPrimary"/>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -278,7 +278,7 @@
                     android:gravity="center"
                     android:textSize="50sp"
                     android:backgroundTint="@color/white"
-                    android:textColor="@color/teal_700"/>
+                    android:textColor="@color/colorPrimary"/>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
 
@@ -308,7 +308,7 @@
                     android:gravity="center"
                     android:textSize="50sp"
                     android:backgroundTint="@color/white"
-                    android:textColor="@color/teal_700"/>
+                    android:textColor="@color/colorPrimary"/>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -331,7 +331,7 @@
                     android:gravity="center"
                     android:textSize="50sp"
                     android:backgroundTint="@color/white"
-                    android:textColor="@color/teal_700"/>
+                    android:textColor="@color/colorPrimary"/>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -354,7 +354,7 @@
                     android:gravity="center"
                     android:textSize="50sp"
                     android:backgroundTint="@color/white"
-                    android:textColor="@color/teal_700"/>
+                    android:textColor="@color/colorPrimary"/>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
 
@@ -375,11 +375,10 @@
 
     <Button
         android:id="@+id/restartsinglebtn"
-        style="@style/Widget.Material3.CardView.Elevated"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/teal_700"
-        android:fontFamily="sans-serif-condensed-medium"
+        android:background="@drawable/replay_button_background"
+        android:fontFamily="sans-serif-medium"
         android:padding="12sp"
         android:text="@string/restart_game"
         android:textAllCaps="true"

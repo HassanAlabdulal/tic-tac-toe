@@ -1,6 +1,5 @@
 package sa.kfupm.swe463project;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
@@ -15,7 +14,7 @@ import java.util.Arrays;
 public class OfflineGame extends AppCompatActivity {
 
     private Button restart;
-    private TextView player1,player2,status;
+    private TextView player1, player2, status;
     private LinearLayout gridsingleplayer;
 
     int activePlayer;
@@ -37,7 +36,7 @@ public class OfflineGame extends AppCompatActivity {
         status = findViewById(R.id.offlinestatus);
         gridsingleplayer = findViewById(R.id.gridsingleplayer);
         gameActive = true;
-        counter=0;
+        counter = 0;
         activePlayer = 0;
 
         gameReset();
@@ -53,12 +52,12 @@ public class OfflineGame extends AppCompatActivity {
     public void gameReset() {
         gameActive = true;
         activePlayer = 0;
-        counter=0;
+        counter = 0;
         Arrays.fill(gameState, 2);
 
-        for(int i=0;i<3;i++){
+        for (int i = 0; i < 3; i++) {
             LinearLayout ll = (LinearLayout) gridsingleplayer.getChildAt(i);
-            for(int j=0;j<3;j++){
+            for (int j = 0; j < 3; j++) {
                 CardView cv = (CardView) ll.getChildAt(j);
                 TextView tv = (TextView) cv.getChildAt(0);
                 tv.setText("");
@@ -67,7 +66,7 @@ public class OfflineGame extends AppCompatActivity {
         status.setText("X's Turn - Tap to play");
     }
 
-    public void playerTap(View view){
+    public void playerTap(View view) {
         CardView card = (CardView) view;
         int tapped = Integer.parseInt(card.getTag().toString());
 
@@ -102,12 +101,11 @@ public class OfflineGame extends AppCompatActivity {
                 gameActive = false;
                 if (gameState[winPosition[0]] == 0) {
                     int w = Integer.parseInt(player1.getText().toString());
-                    player1.setText(String.valueOf(w+1));
+                    player1.setText(String.valueOf(w + 1));
                     winnerStr = "X has won";
-                }
-                else  {
+                } else {
                     int w = Integer.parseInt(player2.getText().toString());
-                    player2.setText(String.valueOf(w+1));
+                    player2.setText(String.valueOf(w + 1));
                     winnerStr = "O has won";
                 }
                 status.setText(winnerStr);
