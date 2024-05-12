@@ -40,8 +40,7 @@ public class CreateGame extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_game);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
+
 
         database = FirebaseDatabase.getInstance();
         myRef = database.getReference("rooms");

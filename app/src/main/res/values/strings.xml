@@ -35,6 +35,11 @@
     <string name="join">Join</string>
     <string name="choose_an_option">Choose An Option</string>
     <string name="create_a_game">Create a Game</string>
+    <string name="restart_game">restart game</string>
+    <string name="player_2_o">Player 2 (O)</string>
+    <string name="player_1_x">Player 1 (X)</string>
+    <string name="_0">0</string>
+    <string name="scoreـoffline">Score</string>
 
 
 </resources>

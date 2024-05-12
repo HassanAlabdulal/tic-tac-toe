@@ -17,8 +17,6 @@ public class OnlineGame extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_online_game);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
 
         createbtn = findViewById(R.id.createbtn);
         joinbtn = findViewById(R.id.joinbtn);

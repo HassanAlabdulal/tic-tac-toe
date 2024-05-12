@@ -29,10 +29,7 @@ public class OfflineGame extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.offline_game);
-
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
+        setContentView(R.layout.activity_offline_game);
 
         restart = findViewById(R.id.restartsinglebtn);
         player1 = findViewById(R.id.player1winsingle);
