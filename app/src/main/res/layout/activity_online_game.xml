@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#33333C"
     tools:context=".OnlineGame">
 
     <LinearLayout
@@ -20,7 +19,7 @@
             android:layout_height="wrap_content"
             android:text="@string/choose_an_option"
             android:fontFamily="sans-serif-condensed-medium"
-            android:textColor="@color/white"
+            android:textColor="@color/colorTextPrimary"
             android:layout_weight="1"
             android:gravity="center"
             android:textSize="48sp"/>
@@ -29,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="21sp"
-            android:backgroundTint="@color/teal_700"
+            android:background="@drawable/replay_button_background"
             android:text="@string/create_a_game"
             android:layout_margin="10sp"
             android:paddingBottom="15sp"
@@ -40,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="21sp"
-            android:backgroundTint="@color/teal_700"
+            android:background="@drawable/replay_button_background"
             android:layout_margin="10sp"
             android:paddingBottom="15sp"
             android:paddingTop="15sp"
