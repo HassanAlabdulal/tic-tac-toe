@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#33333C"
+    android:background="#f9f9f9"
     tools:context=".JoinGame">
 
     <TextView
@@ -15,7 +15,7 @@
         android:fontFamily="sans-serif-medium"
         android:gravity="center"
         android:text="@string/join_a_game"
-        android:textColor="@color/white"
+        android:textColor="@color/colorTextPrimary"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,10 +25,10 @@
         android:id="@+id/tv_joingame_hint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-thin"
+        android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="@string/enter_code_below_to_join_a_game"
-        android:textColor="@color/white"
+        android:textColor="@color/colorTextBody"
         android:textSize="20sp"
         android:layout_marginTop="50sp"
         app:layout_constraintTop_toBottomOf="@+id/join_game_heading"
@@ -77,13 +77,14 @@
                 android:id="@+id/joinbtn_join_game"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/join"
-                android:backgroundTint="@color/teal_700"
-                android:textSize="26sp"
+                android:layout_marginStart="50sp"
                 android:layout_marginTop="30sp"
                 android:layout_marginEnd="50sp"
-                android:layout_marginStart="50sp"
-                android:layout_marginBottom="30sp"/>
+                android:layout_marginBottom="30sp"
+                android:background="@drawable/background_button"
+                android:textColor="@color/white"
+                android:text="@string/join"
+                android:textSize="26sp" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

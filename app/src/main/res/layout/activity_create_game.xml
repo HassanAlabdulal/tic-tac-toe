@@ -78,7 +78,7 @@
         android:layout_marginTop="16sp"
         android:gravity="center"
         android:text="@string/ask_your_friend_to_join_with_this_code"
-        android:textColor="@color/colorTextSecondary"
+        android:textColor="@color/colorTextBody"
         android:textSize="20sp"
         android:fontFamily="sans-serif"
         app:layout_constraintBottom_toBottomOf="parent"
