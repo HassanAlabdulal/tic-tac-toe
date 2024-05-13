@@ -40,6 +40,9 @@
     <string name="player_1_x">Player 1 (X)</string>
     <string name="_0">0</string>
     <string name="scoreـoffline">Score</string>
+    <string name="restart_game_online">Restart Game</string>
+    <string name="share_code">Share Code</string>
+    <string name="ask_your_friend_to_join_with_this_code">Ask Your Friend To Join With This Code</string>
 
 
 </resources>
