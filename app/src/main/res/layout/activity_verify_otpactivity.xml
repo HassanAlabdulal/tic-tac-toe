@@ -171,7 +171,7 @@
                 android:background="@drawable/background_button"
                 android:text="@string/verify"
                 android:textColor="@color/colorWhite"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <ProgressBar

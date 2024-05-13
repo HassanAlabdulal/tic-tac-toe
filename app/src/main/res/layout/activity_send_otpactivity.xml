@@ -98,12 +98,13 @@
                 android:id="@+id/buttonGetOTP"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="30dp"
                 android:background="@drawable/replay_button_background"
                 android:text="@string/get_otp"
                 android:textColor="@color/colorWhite"
-                android:textSize="16sp"
+                android:textSize="18sp"
+                android:layout_margin="30dp"
                 android:textStyle="bold" />
+
 
             <ProgressBar android:id="@+id/progressBar"
                 android:layout_width="40dp"
