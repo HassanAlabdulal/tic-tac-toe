@@ -42,32 +42,52 @@
             android:textColor="@color/colorTextPrimary"
             android:textSize="48sp" />
 
-        <Button
-            android:id="@+id/createbtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10sp"
-            android:background="@drawable/replay_button_background"
-            android:paddingTop="15sp"
-            android:paddingBottom="15sp"
-            android:text="@string/create_a_game"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textSize="18sp" />
 
-        <Button
-            android:id="@+id/joinbtn"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10sp"
-            android:layout_marginTop="15sp"
-            android:background="@drawable/replay_button_background"
-            android:paddingTop="15sp"
-            android:paddingBottom="15sp"
-            android:text="Join a game"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textSize="18sp" />
+            android:layout_height="55dp"
+            android:layout_margin="40dp"
+            android:background="@drawable/background_button">
+
+            <Button
+                android:id="@+id/createbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="147dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:drawableLeft="@drawable/create"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:text="@string/create_a_game"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="40dp"
+            android:background="@drawable/background_button">
+
+            <Button
+                android:id="@+id/joinbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:drawableLeft="@drawable/join"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:text="Join a game"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </FrameLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

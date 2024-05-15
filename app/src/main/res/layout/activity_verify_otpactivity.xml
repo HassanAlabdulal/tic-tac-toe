@@ -168,6 +168,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_margin="40dp"
+                android:id="@+id/frameLayoutVerify"
                 android:background="@drawable/background_button">
 
                 <Button

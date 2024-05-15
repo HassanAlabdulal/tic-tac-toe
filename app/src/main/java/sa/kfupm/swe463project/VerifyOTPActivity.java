@@ -10,6 +10,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -47,6 +48,7 @@ public class VerifyOTPActivity extends AppCompatActivity {
 
         final ProgressBar progressBar = findViewById(R.id.progressBar);
         final Button buttonVerify = findViewById(R.id.buttonVerify);
+        final FrameLayout frameLayout = findViewById(R.id.frameLayoutVerify);
 
         verificationId = getIntent().getStringExtra("verificationId");
 
@@ -74,6 +76,7 @@ public class VerifyOTPActivity extends AppCompatActivity {
                 if (verificationId != null) {
                     progressBar.setVisibility(View.VISIBLE);
                     buttonVerify.setVisibility(View.INVISIBLE);
+                    frameLayout.setVisibility(View.INVISIBLE);
 
                     PhoneAuthCredential phoneAuthCredential = PhoneAuthProvider.getCredential(
                             verificationId,
@@ -86,6 +89,7 @@ public class VerifyOTPActivity extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     progressBar.setVisibility(View.GONE);
                                     buttonVerify.setVisibility(View.VISIBLE);
+                                    frameLayout.setVisibility(View.VISIBLE);
 
                                     if (task.isSuccessful()) {
                                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
