@@ -94,16 +94,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <Button
-                android:id="@+id/buttonGetOTP"
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/replay_button_background"
-                android:text="@string/get_otp"
-                android:textColor="@color/colorWhite"
-                android:textSize="18sp"
-                android:layout_margin="30dp"
-                android:textStyle="bold" />
+                android:layout_height="40dp"
+                android:layout_margin="35dp"
+                android:background="@drawable/background_button">
+
+                <Button
+                    android:id="@+id/buttonGetOTP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/sendicon"
+                    android:drawablePadding="6dp"
+                    android:gravity="center"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:text="@string/get_otp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white" />
+            </FrameLayout>
 
 
             <ProgressBar android:id="@+id/progressBar"
