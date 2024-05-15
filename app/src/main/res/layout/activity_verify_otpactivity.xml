@@ -176,7 +176,7 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:background="@null"
-                    android:drawableLeft="@drawable/check"
+                    android:drawableLeft="@drawable/verify"
                     android:drawablePadding="6dp"
                     android:gravity="center"
                     android:minHeight="0dp"
