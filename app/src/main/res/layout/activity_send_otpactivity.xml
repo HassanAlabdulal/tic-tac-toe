@@ -15,8 +15,8 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-        <ImageView android:layout_width="130dp"
-            android:layout_height="130dp"
+        <ImageView android:layout_width="160dp"
+            android:layout_height="160dp"
             android:layout_marginTop="80dp"
             android:contentDescription="@string/app_name"
             android:src="@drawable/send" />
