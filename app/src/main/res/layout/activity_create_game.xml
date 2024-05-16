@@ -55,22 +55,6 @@
                 android:textStyle="bold"
                 android:textAlignment="center"/>
 
-<!--            <Button-->
-<!--                android:id="@+id/sharecode"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="@string/share_code"-->
-<!--                android:textSize="20sp"-->
-<!--                android:padding="6sp"-->
-<!--                android:textStyle="bold"-->
-<!--                android:background="@drawable/background_button"-->
-<!--                android:textColor="@color/white"-->
-<!--                android:layout_marginTop="30sp"-->
-<!--                android:layout_marginEnd="40sp"-->
-<!--                android:layout_marginStart="40sp"-->
-<!--                android:layout_marginBottom="30sp"/>-->
-
-
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
