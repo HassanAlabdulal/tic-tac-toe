@@ -86,7 +86,7 @@
                     android:layout_gravity="center"
                     android:background="@null"
                     android:drawableLeft="@drawable/join"
-                    android:drawablePadding="6dp"
+                    android:drawablePadding="8dp"
                     android:gravity="center"
                     android:minHeight="0dp"
                     android:minWidth="0dp"
