@@ -68,20 +68,20 @@ public class JoinGame extends AppCompatActivity {
             public void onClick(View v) {
                 String code = codeET.getText().toString();
                 if(code.length() == 4){
-                    if(dataSnapshot.child(code).exists()){
-                        if(dataSnapshot.child(code).child("player2").exists()){
+                    if(dataSnapshot.child(code).exists()){ // Check code validity
+                        if(dataSnapshot.child(code).child("player2").exists()){ // Check if the room is full
                             Toast.makeText(getApplicationContext(),"Game has already started",Toast.LENGTH_SHORT).show();
                         }else {
                             c = Calendar.getInstance();
                             if (dataSnapshot.child(code).child("StartTime")
-                                    .getValue(Long.class) - c.getTimeInMillis() >= 86400000) {
+                                    .getValue(Long.class) - c.getTimeInMillis() >= 86400000) { // Check if the code has expired
                                 Toast.makeText(getBaseContext(),"The code has expired. Please generate a new code.",Toast.LENGTH_LONG).show();
                             } else {
                                 @SuppressLint("HardwareIds") String android_id = Settings.Secure.getString(getContentResolver(),Settings.Secure.ANDROID_ID);
-                                if (android_id.equals(dataSnapshot.child(code).child("player1").getValue(String.class))) {
+                                if (android_id.equals(dataSnapshot.child(code).child("player1").getValue(String.class))) { // Prevent self-join
                                     Toast.makeText(getBaseContext(), "You can't join a game started by you.", Toast.LENGTH_LONG).show();
                                 } else {
-                                    myRef.child(code).child("player2").setValue(android_id);
+                                    myRef.child(code).child("player2").setValue(android_id); // Add player to the room
                                     Toast.makeText(getBaseContext(), "Game Started!", Toast.LENGTH_LONG).show();
                                     startActivity(new Intent(getBaseContext(), GameActivity.class).putExtra("roomcode", code).putExtra("myself", "O"));
                                     finish();
